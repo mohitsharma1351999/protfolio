@@ -93,7 +93,8 @@ header li {
 header a {
     display: block;
     color: #3498db;
-    padding: 10px
+    padding: 10px;
+    font-weight: bold;
 }
 
 header a:hover {
@@ -170,14 +171,16 @@ footer {
 }
 
 .top {
-    position: absolute;
-    right: 0;
-    bottom: 50%;
-    transform: translateY(50%);
+    position: relative;
+    height: 50px;   
 }
 
 .top span {
     cursor: pointer;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     display: block;
     margin: 15px auto 0 auto;
     width: 35px;
@@ -538,16 +541,30 @@ footer {
 }
 
 .project {
-    position: relative;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto 30px auto;
-    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+    text-align: left;
     background: #fff;
-    border-radius: 4px
 }
 
-.project-image {
-    float: left
+.project h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #374054
+}
+
+.project span {
+    display: block;
+    clear: left;
+    color: #74808a;
+}
+
+.project h4 {
+    color: #74808a;
+    font-weight: 400;
 }
 
 .project-info {
